@@ -1,0 +1,123 @@
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model User {
+  id        String   @id @default(cuid())
+  name      String
+  email     String   @unique
+  password  String
+  role      String   @default("NORMAL_USER")
+  avatar    String?
+  isActive  Boolean  @default(true)
+  createdById String?
+  createdBy   User?    @relation("UserHierarchy", fields: [createdById], references: [id], onDelete: SetNull)
+  createdUsers User[]  @relation("UserHierarchy")
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  ownedFolders  Folder[]       @relation("FolderOwner")
+  uploadedFiles File[]         @relation("FileOwner")
+  signatures    Signature[]
+  sentMessages  Message[]      @relation("MessageSender")
+  notifications Notification[]
+  folderAccess  FolderAccess[]
+
+  @@index([createdById])
+  @@map("users")
+}
+
+model Folder {
+  id        String   @id @default(cuid())
+  name      String
+  parentId  String?
+  parent    Folder?  @relation("FolderTree", fields: [parentId], references: [id])
+  children  Folder[] @relation("FolderTree")
+  ownerId   String
+  owner     User     @relation("FolderOwner", fields: [ownerId], references: [id])
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  files  File[]
+  access FolderAccess[]
+
+  @@map("folders")
+}
+
+model FolderAccess {
+  id       String  @id @default(cuid())
+  folderId String
+  folder   Folder  @relation(fields: [folderId], references: [id], onDelete: Cascade)
+  userId   String
+  user     User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+  canView  Boolean @default(true)
+  canEdit  Boolean @default(false)
+
+  createdAt DateTime @default(now())
+
+  @@unique([folderId, userId])
+  @@map("folder_access")
+}
+
+model File {
+  id           String   @id @default(cuid())
+  name         String
+  originalName String
+  mimeType     String
+  size         Int
+  path         String
+  folderId     String?
+  folder       Folder?  @relation(fields: [folderId], references: [id])
+  uploadedById String
+  uploadedBy   User     @relation("FileOwner", fields: [uploadedById], references: [id])
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  signature Signature?
+
+  @@map("files")
+}
+
+model Signature {
+  id            String   @id @default(cuid())
+  fileId        String   @unique
+  file          File     @relation(fields: [fileId], references: [id], onDelete: Cascade)
+  signedById    String
+  signedBy      User     @relation(fields: [signedById], references: [id])
+  signatureData String
+  signedAt      DateTime @default(now())
+
+  @@map("signatures")
+}
+
+model Notification {
+  id        String   @id @default(cuid())
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  title     String
+  body      String
+  type      String   @default("info")
+  isRead    Boolean  @default(false)
+  createdAt DateTime @default(now())
+
+  @@map("notifications")
+}
+
+model Message {
+  id          String   @id @default(cuid())
+  senderId    String
+  sender      User     @relation("MessageSender", fields: [senderId], references: [id])
+  recipientId String
+  subject     String
+  body        String
+  channel     String   @default("in_app")
+  isRead      Boolean  @default(false)
+  createdAt   DateTime @default(now())
+
+  @@map("messages")
+}

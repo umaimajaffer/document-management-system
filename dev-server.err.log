@@ -1,0 +1,288 @@
+ ⨯ PrismaClientKnownRequestError: 
+Invalid `prisma.user.delete()` invocation:
+
+
+Foreign key constraint violated: `foreign key`
+    at $n.handleRequestError (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\@prisma\client\runtime\library.js:121:7315)
+    at $n.handleAndLogRequestError (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\@prisma\client\runtime\library.js:121:6623)
+    at $n.request (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\@prisma\client\runtime\library.js:121:6307)
+    at async l (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\@prisma\client\runtime\library.js:130:9633)
+    at async DELETE (webpack-internal:///(rsc)/./src/app/api/users/[id]/route.ts:94:5)
+    at async C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:55831
+    at async eO.execute (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:46527)
+    at async eO.handle (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:57165)
+    at async doRender (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\base-server.js:1353:42)
+    at async cacheEntry.responseCache.get.routeKind (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\base-server.js:1563:40)
+    at async DevServer.renderToResponseWithComponentsImpl (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\base-server.js:1483:28)
+    at async DevServer.renderPageComponent (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\base-server.js:1911:24)
+    at async DevServer.renderToResponseImpl (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\base-server.js:1949:32)
+    at async DevServer.pipeImpl (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\base-server.js:921:25)
+    at async NextNodeServer.handleCatchallRenderRequest (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\next-server.js:272:17)
+    at async DevServer.handleRequestImpl (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\base-server.js:817:17)
+    at async C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\dev\next-dev-server.js:339:20
+    at async Span.traceAsyncFn (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\trace\trace.js:154:20)
+    at async DevServer.handleRequest (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\dev\next-dev-server.js:336:24)
+    at async invokeRender (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\lib\router-server.js:173:21)
+    at async handleRequest (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\lib\router-server.js:350:24)
+    at async requestHandlerImpl (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\lib\router-server.js:374:13)
+    at async Server.requestListener (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\lib\start-server.js:141:13) {
+  code: 'P2003',
+  clientVersion: '5.22.0',
+  meta: { modelName: 'User', field_name: 'foreign key' }
+}
+ ⨯ PrismaClientKnownRequestError: 
+Invalid `prisma.user.delete()` invocation:
+
+
+Foreign key constraint violated: `foreign key`
+    at $n.handleRequestError (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\@prisma\client\runtime\library.js:121:7315)
+    at $n.handleAndLogRequestError (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\@prisma\client\runtime\library.js:121:6623)
+    at $n.request (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\@prisma\client\runtime\library.js:121:6307)
+    at async l (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\@prisma\client\runtime\library.js:130:9633)
+    at async DELETE (webpack-internal:///(rsc)/./src/app/api/users/[id]/route.ts:94:5)
+    at async C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:55831
+    at async eO.execute (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:46527)
+    at async eO.handle (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:57165)
+    at async doRender (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\base-server.js:1353:42)
+    at async cacheEntry.responseCache.get.routeKind (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\base-server.js:1563:40)
+    at async DevServer.renderToResponseWithComponentsImpl (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\base-server.js:1483:28)
+    at async DevServer.renderPageComponent (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\base-server.js:1911:24)
+    at async DevServer.renderToResponseImpl (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\base-server.js:1949:32)
+    at async DevServer.pipeImpl (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\base-server.js:921:25)
+    at async NextNodeServer.handleCatchallRenderRequest (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\next-server.js:272:17)
+    at async DevServer.handleRequestImpl (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\base-server.js:817:17)
+    at async C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\dev\next-dev-server.js:339:20
+    at async Span.traceAsyncFn (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\trace\trace.js:154:20)
+    at async DevServer.handleRequest (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\dev\next-dev-server.js:336:24)
+    at async invokeRender (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\lib\router-server.js:173:21)
+    at async handleRequest (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\lib\router-server.js:350:24)
+    at async requestHandlerImpl (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\lib\router-server.js:374:13)
+    at async Server.requestListener (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\lib\start-server.js:141:13) {
+  code: 'P2003',
+  clientVersion: '5.22.0',
+  meta: { modelName: 'User', field_name: 'foreign key' }
+}
+ ⨯ PrismaClientKnownRequestError: 
+Invalid `prisma.user.delete()` invocation:
+
+
+Foreign key constraint violated: `foreign key`
+    at $n.handleRequestError (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\@prisma\client\runtime\library.js:121:7315)
+    at $n.handleAndLogRequestError (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\@prisma\client\runtime\library.js:121:6623)
+    at $n.request (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\@prisma\client\runtime\library.js:121:6307)
+    at async l (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\@prisma\client\runtime\library.js:130:9633)
+    at async DELETE (webpack-internal:///(rsc)/./src/app/api/users/[id]/route.ts:94:5)
+    at async C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:55831
+    at async eO.execute (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:46527)
+    at async eO.handle (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:57165)
+    at async doRender (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\base-server.js:1353:42)
+    at async cacheEntry.responseCache.get.routeKind (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\base-server.js:1563:40)
+    at async DevServer.renderToResponseWithComponentsImpl (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\base-server.js:1483:28)
+    at async DevServer.renderPageComponent (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\base-server.js:1911:24)
+    at async DevServer.renderToResponseImpl (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\base-server.js:1949:32)
+    at async DevServer.pipeImpl (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\base-server.js:921:25)
+    at async NextNodeServer.handleCatchallRenderRequest (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\next-server.js:272:17)
+    at async DevServer.handleRequestImpl (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\base-server.js:817:17)
+    at async C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\dev\next-dev-server.js:339:20
+    at async Span.traceAsyncFn (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\trace\trace.js:154:20)
+    at async DevServer.handleRequest (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\dev\next-dev-server.js:336:24)
+    at async invokeRender (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\lib\router-server.js:173:21)
+    at async handleRequest (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\lib\router-server.js:350:24)
+    at async requestHandlerImpl (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\lib\router-server.js:374:13)
+    at async Server.requestListener (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\lib\start-server.js:141:13) {
+  code: 'P2003',
+  clientVersion: '5.22.0',
+  meta: { modelName: 'User', field_name: 'foreign key' }
+}
+ ⨯ PrismaClientKnownRequestError: 
+Invalid `prisma.user.delete()` invocation:
+
+
+Foreign key constraint violated: `foreign key`
+    at $n.handleRequestError (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\@prisma\client\runtime\library.js:121:7315)
+    at $n.handleAndLogRequestError (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\@prisma\client\runtime\library.js:121:6623)
+    at $n.request (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\@prisma\client\runtime\library.js:121:6307)
+    at async l (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\@prisma\client\runtime\library.js:130:9633)
+    at async DELETE (webpack-internal:///(rsc)/./src/app/api/users/[id]/route.ts:94:5)
+    at async C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:55831
+    at async eO.execute (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:46527)
+    at async eO.handle (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:57165)
+    at async doRender (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\base-server.js:1353:42)
+    at async cacheEntry.responseCache.get.routeKind (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\base-server.js:1563:40)
+    at async DevServer.renderToResponseWithComponentsImpl (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\base-server.js:1483:28)
+    at async DevServer.renderPageComponent (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\base-server.js:1911:24)
+    at async DevServer.renderToResponseImpl (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\base-server.js:1949:32)
+    at async DevServer.pipeImpl (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\base-server.js:921:25)
+    at async NextNodeServer.handleCatchallRenderRequest (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\next-server.js:272:17)
+    at async DevServer.handleRequestImpl (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\base-server.js:817:17)
+    at async C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\dev\next-dev-server.js:339:20
+    at async Span.traceAsyncFn (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\trace\trace.js:154:20)
+    at async DevServer.handleRequest (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\dev\next-dev-server.js:336:24)
+    at async invokeRender (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\lib\router-server.js:173:21)
+    at async handleRequest (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\lib\router-server.js:350:24)
+    at async requestHandlerImpl (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\lib\router-server.js:374:13)
+    at async Server.requestListener (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\lib\start-server.js:141:13) {
+  code: 'P2003',
+  clientVersion: '5.22.0',
+  meta: { modelName: 'User', field_name: 'foreign key' }
+}
+ ⨯ PrismaClientKnownRequestError: 
+Invalid `prisma.user.delete()` invocation:
+
+
+Foreign key constraint violated: `foreign key`
+    at $n.handleRequestError (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\@prisma\client\runtime\library.js:121:7315)
+    at $n.handleAndLogRequestError (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\@prisma\client\runtime\library.js:121:6623)
+    at $n.request (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\@prisma\client\runtime\library.js:121:6307)
+    at async l (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\@prisma\client\runtime\library.js:130:9633)
+    at async DELETE (webpack-internal:///(rsc)/./src/app/api/users/[id]/route.ts:94:5)
+    at async C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:55831
+    at async eO.execute (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:46527)
+    at async eO.handle (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:57165)
+    at async doRender (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\base-server.js:1353:42)
+    at async cacheEntry.responseCache.get.routeKind (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\base-server.js:1563:40)
+    at async DevServer.renderToResponseWithComponentsImpl (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\base-server.js:1483:28)
+    at async DevServer.renderPageComponent (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\base-server.js:1911:24)
+    at async DevServer.renderToResponseImpl (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\base-server.js:1949:32)
+    at async DevServer.pipeImpl (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\base-server.js:921:25)
+    at async NextNodeServer.handleCatchallRenderRequest (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\next-server.js:272:17)
+    at async DevServer.handleRequestImpl (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\base-server.js:817:17)
+    at async C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\dev\next-dev-server.js:339:20
+    at async Span.traceAsyncFn (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\trace\trace.js:154:20)
+    at async DevServer.handleRequest (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\dev\next-dev-server.js:336:24)
+    at async invokeRender (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\lib\router-server.js:173:21)
+    at async handleRequest (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\lib\router-server.js:350:24)
+    at async requestHandlerImpl (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\lib\router-server.js:374:13)
+    at async Server.requestListener (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\lib\start-server.js:141:13) {
+  code: 'P2003',
+  clientVersion: '5.22.0',
+  meta: { modelName: 'User', field_name: 'foreign key' }
+}
+ ⨯ PrismaClientKnownRequestError: 
+Invalid `prisma.user.delete()` invocation:
+
+
+Foreign key constraint violated: `foreign key`
+    at $n.handleRequestError (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\@prisma\client\runtime\library.js:121:7315)
+    at $n.handleAndLogRequestError (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\@prisma\client\runtime\library.js:121:6623)
+    at $n.request (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\@prisma\client\runtime\library.js:121:6307)
+    at async l (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\@prisma\client\runtime\library.js:130:9633)
+    at async DELETE (webpack-internal:///(rsc)/./src/app/api/users/[id]/route.ts:94:5)
+    at async C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:55831
+    at async eO.execute (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:46527)
+    at async eO.handle (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:57165)
+    at async doRender (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\base-server.js:1353:42)
+    at async cacheEntry.responseCache.get.routeKind (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\base-server.js:1563:40)
+    at async DevServer.renderToResponseWithComponentsImpl (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\base-server.js:1483:28)
+    at async DevServer.renderPageComponent (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\base-server.js:1911:24)
+    at async DevServer.renderToResponseImpl (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\base-server.js:1949:32)
+    at async DevServer.pipeImpl (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\base-server.js:921:25)
+    at async NextNodeServer.handleCatchallRenderRequest (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\next-server.js:272:17)
+    at async DevServer.handleRequestImpl (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\base-server.js:817:17)
+    at async C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\dev\next-dev-server.js:339:20
+    at async Span.traceAsyncFn (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\trace\trace.js:154:20)
+    at async DevServer.handleRequest (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\dev\next-dev-server.js:336:24)
+    at async invokeRender (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\lib\router-server.js:173:21)
+    at async handleRequest (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\lib\router-server.js:350:24)
+    at async requestHandlerImpl (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\lib\router-server.js:374:13)
+    at async Server.requestListener (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\lib\start-server.js:141:13) {
+  code: 'P2003',
+  clientVersion: '5.22.0',
+  meta: { modelName: 'User', field_name: 'foreign key' }
+}
+ ⨯ PrismaClientKnownRequestError: 
+Invalid `prisma.user.delete()` invocation:
+
+
+Foreign key constraint violated: `foreign key`
+    at $n.handleRequestError (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\@prisma\client\runtime\library.js:121:7315)
+    at $n.handleAndLogRequestError (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\@prisma\client\runtime\library.js:121:6623)
+    at $n.request (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\@prisma\client\runtime\library.js:121:6307)
+    at async l (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\@prisma\client\runtime\library.js:130:9633)
+    at async DELETE (webpack-internal:///(rsc)/./src/app/api/users/[id]/route.ts:94:5)
+    at async C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:55831
+    at async eO.execute (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:46527)
+    at async eO.handle (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:57165)
+    at async doRender (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\base-server.js:1353:42)
+    at async cacheEntry.responseCache.get.routeKind (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\base-server.js:1563:40)
+    at async DevServer.renderToResponseWithComponentsImpl (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\base-server.js:1483:28)
+    at async DevServer.renderPageComponent (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\base-server.js:1911:24)
+    at async DevServer.renderToResponseImpl (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\base-server.js:1949:32)
+    at async DevServer.pipeImpl (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\base-server.js:921:25)
+    at async NextNodeServer.handleCatchallRenderRequest (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\next-server.js:272:17)
+    at async DevServer.handleRequestImpl (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\base-server.js:817:17)
+    at async C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\dev\next-dev-server.js:339:20
+    at async Span.traceAsyncFn (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\trace\trace.js:154:20)
+    at async DevServer.handleRequest (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\dev\next-dev-server.js:336:24)
+    at async invokeRender (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\lib\router-server.js:173:21)
+    at async handleRequest (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\lib\router-server.js:350:24)
+    at async requestHandlerImpl (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\lib\router-server.js:374:13)
+    at async Server.requestListener (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\lib\start-server.js:141:13) {
+  code: 'P2003',
+  clientVersion: '5.22.0',
+  meta: { modelName: 'User', field_name: 'foreign key' }
+}
+ ⨯ PrismaClientKnownRequestError: 
+Invalid `prisma.user.delete()` invocation:
+
+
+Foreign key constraint violated: `foreign key`
+    at $n.handleRequestError (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\@prisma\client\runtime\library.js:121:7315)
+    at $n.handleAndLogRequestError (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\@prisma\client\runtime\library.js:121:6623)
+    at $n.request (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\@prisma\client\runtime\library.js:121:6307)
+    at async l (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\@prisma\client\runtime\library.js:130:9633)
+    at async DELETE (webpack-internal:///(rsc)/./src/app/api/users/[id]/route.ts:94:5)
+    at async C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:55831
+    at async eO.execute (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:46527)
+    at async eO.handle (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:57165)
+    at async doRender (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\base-server.js:1353:42)
+    at async cacheEntry.responseCache.get.routeKind (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\base-server.js:1563:40)
+    at async DevServer.renderToResponseWithComponentsImpl (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\base-server.js:1483:28)
+    at async DevServer.renderPageComponent (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\base-server.js:1911:24)
+    at async DevServer.renderToResponseImpl (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\base-server.js:1949:32)
+    at async DevServer.pipeImpl (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\base-server.js:921:25)
+    at async NextNodeServer.handleCatchallRenderRequest (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\next-server.js:272:17)
+    at async DevServer.handleRequestImpl (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\base-server.js:817:17)
+    at async C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\dev\next-dev-server.js:339:20
+    at async Span.traceAsyncFn (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\trace\trace.js:154:20)
+    at async DevServer.handleRequest (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\dev\next-dev-server.js:336:24)
+    at async invokeRender (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\lib\router-server.js:173:21)
+    at async handleRequest (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\lib\router-server.js:350:24)
+    at async requestHandlerImpl (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\lib\router-server.js:374:13)
+    at async Server.requestListener (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\lib\start-server.js:141:13) {
+  code: 'P2003',
+  clientVersion: '5.22.0',
+  meta: { modelName: 'User', field_name: 'foreign key' }
+}
+ ⨯ PrismaClientKnownRequestError: 
+Invalid `prisma.user.delete()` invocation:
+
+
+Foreign key constraint violated: `foreign key`
+    at $n.handleRequestError (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\@prisma\client\runtime\library.js:121:7315)
+    at $n.handleAndLogRequestError (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\@prisma\client\runtime\library.js:121:6623)
+    at $n.request (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\@prisma\client\runtime\library.js:121:6307)
+    at async l (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\@prisma\client\runtime\library.js:130:9633)
+    at async DELETE (webpack-internal:///(rsc)/./src/app/api/users/[id]/route.ts:94:5)
+    at async C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:55831
+    at async eO.execute (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:46527)
+    at async eO.handle (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:57165)
+    at async doRender (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\base-server.js:1353:42)
+    at async cacheEntry.responseCache.get.routeKind (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\base-server.js:1563:40)
+    at async DevServer.renderToResponseWithComponentsImpl (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\base-server.js:1483:28)
+    at async DevServer.renderPageComponent (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\base-server.js:1911:24)
+    at async DevServer.renderToResponseImpl (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\base-server.js:1949:32)
+    at async DevServer.pipeImpl (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\base-server.js:921:25)
+    at async NextNodeServer.handleCatchallRenderRequest (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\next-server.js:272:17)
+    at async DevServer.handleRequestImpl (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\base-server.js:817:17)
+    at async C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\dev\next-dev-server.js:339:20
+    at async Span.traceAsyncFn (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\trace\trace.js:154:20)
+    at async DevServer.handleRequest (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\dev\next-dev-server.js:336:24)
+    at async invokeRender (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\lib\router-server.js:173:21)
+    at async handleRequest (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\lib\router-server.js:350:24)
+    at async requestHandlerImpl (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\lib\router-server.js:374:13)
+    at async Server.requestListener (C:\Users\DELL 5400\Desktop\novatrax solutions 2025\Clients Data\Driss\Project\node_modules\next\dist\server\lib\start-server.js:141:13) {
+  code: 'P2003',
+  clientVersion: '5.22.0',
+  meta: { modelName: 'User', field_name: 'foreign key' }
+}
