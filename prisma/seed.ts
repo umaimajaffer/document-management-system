@@ -3,6 +3,10 @@ import bcrypt from "bcryptjs";
 import fs from "fs";
 import path from "path";
 
+const uploadRoot = process.env.FILE_STORAGE_ROOT
+  ? path.resolve(process.env.FILE_STORAGE_ROOT)
+  : path.join(process.cwd(), "storage", "uploads");
+
 const prisma = new PrismaClient();
 
 async function main() {
@@ -66,7 +70,7 @@ async function main() {
   });
 
   // Create sample PDF files (write placeholder PDFs to disk)
-  const samplesDir = path.join(process.cwd(), "storage", "uploads", "samples");
+  const samplesDir = path.join(uploadRoot, "samples");
   if (!fs.existsSync(samplesDir)) fs.mkdirSync(samplesDir, { recursive: true });
 
   // Minimal valid PDF content

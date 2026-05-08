@@ -43,3 +43,5 @@ public/uploads/*
 !public/uploads/samples/
 public/uploads/samples/*
 !public/uploads/samples/.gitkeep
+storage/uploads/*
+!storage/uploads/.gitkeep

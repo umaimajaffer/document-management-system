@@ -4,7 +4,7 @@ import { authOptions } from "@/lib/auth";
 import { prisma } from "@/lib/prisma";
 import { canCopyFiles } from "@/lib/permissions";
 import { canAccessFolder, canManageFile, fileAccessWhere, serializeFileForClient } from "@/lib/access-control";
-import { resolveStoredFilePath } from "@/lib/file-storage";
+import { getUploadRoot, resolveStoredFilePath, storedUploadPath } from "@/lib/file-storage";
 import path from "path";
 import fs from "fs";
 import { randomUUID } from "crypto";
@@ -36,11 +36,11 @@ export async function POST(req: NextRequest, { params }: { params: { id: string 
       const srcDisk = resolveStoredFilePath(original.path);
       const ext = path.extname(original.path);
       const newFilename = `${randomUUID()}${ext}`;
-      const userDir = path.join(process.cwd(), "storage", "uploads", session.user.id);
+      const userDir = path.join(getUploadRoot(), session.user.id);
       fs.mkdirSync(userDir, { recursive: true });
       const destDisk = path.join(userDir, newFilename);
       fs.copyFileSync(srcDisk, destDisk);
-      newPath = `storage/uploads/${session.user.id}/${newFilename}`;
+      newPath = storedUploadPath(session.user.id, newFilename);
     } catch {}
   }
 

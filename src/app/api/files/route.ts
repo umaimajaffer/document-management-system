@@ -4,6 +4,7 @@ import { authOptions } from "@/lib/auth";
 import { prisma } from "@/lib/prisma";
 import { isAdvancedOrAdmin } from "@/lib/permissions";
 import { canAccessFolder, fileAccessWhere, serializeFileForClient } from "@/lib/access-control";
+import { getUploadRoot, storedUploadPath } from "@/lib/file-storage";
 import path from "path";
 import fs from "fs";
 import { randomUUID } from "crypto";
@@ -68,7 +69,7 @@ export async function POST(req: NextRequest) {
 
   const ext = path.extname(file.name) || ".bin";
   const filename = `${randomUUID()}${ext}`;
-  const userDir = path.join(process.cwd(), "storage", "uploads", session.user.id);
+  const userDir = path.join(getUploadRoot(), session.user.id);
   fs.mkdirSync(userDir, { recursive: true });
   fs.writeFileSync(path.join(userDir, filename), buffer);
 
@@ -78,7 +79,7 @@ export async function POST(req: NextRequest) {
       originalName: file.name,
       mimeType: file.type,
       size: file.size,
-      path: `storage/uploads/${session.user.id}/${filename}`,
+      path: storedUploadPath(session.user.id, filename),
       folderId: folderId || null,
       uploadedById: session.user.id,
     },
